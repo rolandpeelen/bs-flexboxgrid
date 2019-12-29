@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/rolandpeelen/bs-flexboxgrid"
   },
-  "peerDependencies": {
+  "dependencies": {
     "flexboxgrid": "^6.3.1"
   },
   "devDependencies": {
