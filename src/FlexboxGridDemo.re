@@ -1,5 +1,3 @@
-open Grid;
-
 module Box = {
   open Css;
 
