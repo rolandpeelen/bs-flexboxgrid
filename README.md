@@ -2,6 +2,13 @@
 This is a small wrapper written around the `flexboxgrid` (http://flexboxgrid.com/) library. It's not written in a way to eliminate the CSS by using BS-CSS, but rather as a wrapper for the classes. It's API is similarly implemented to the `react-styled-flexboxgrid` (https://www.npmjs.com/package/react-styled-flexboxgrid).
 
 # Usage
+## Installation 
+1. Install
+```
+yarn add bs-flexboxgrid
+```
+2. Add `bs-flexboxgrid` to your `bsconfig`
+3. Namespace is `Flexboxgrid` (i.e. `Flexboxgrid.Row` or `Flexboxgrid.Col` or `open Flexboxgrid`)
 
 ## Types 
 Types are similar to the `bs-css` ones in language.
