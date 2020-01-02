@@ -29,6 +29,7 @@ let make =
       booleanProp("reverse", reverse),
       className,
     |]
-    |> Js.Array.joinWith("  ");
+    ->ignoreEmptyAndConcatenate;
+
   <div className=totalOptions> children </div>;
 };
