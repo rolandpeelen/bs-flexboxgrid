@@ -23,33 +23,37 @@ type breakpoint = [
 ```
 
 ## Row
+NOTE - To keep the interface as clean as possible, all values, while technically optional, have defaulted fallbacks so no need for `Some(value)`.
 ```typescript
-<Row start=breakpoint
-     center=breakpoint
-     _end=breakpoint
-     top=breakpoint
-     middle=breakpoint
-     bottom=breakpoint
-     around=breakpoint
-     between=breakpoint
-     reverse=boolean>
+<Row start=breakpoint?
+     center=breakpoint?
+     _end=breakpoint?
+     top=breakpoint?
+     middle=breakpoint?
+     bottom=breakpoint?
+     around=breakpoint?
+     between=breakpoint?
+     reverse=boolean?
+     className=string?>
  ...someStuff
 </Row>
 ```
 
 ## Column
+NOTE - To keep the interface as clean as possible, all values, while technically optional, have defaulted fallbacks, so no need for `Some(value)`.
 ```typescript
-<Col fluid=breakpoint
-     first=breakpoint
-     last=breakpoint
-     xs=int
-     sm=int
-     md=int
-     lg=int
-     xsOffset=int 
-     smOffset=int 
-     mdOffset=int
-     lgOffset=int>
+<Col fluid=breakpoint?
+     first=breakpoint?
+     last=breakpoint?
+     xs=int?
+     sm=int?
+     md=int?
+     lg=int?
+     xsOffset=int?
+     smOffset=int?
+     mdOffset=int?
+     lgOffset=int?
+     className=string?>
  ...someStuff
 </Col>
 ```
