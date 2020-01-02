@@ -1,6 +1,6 @@
 {
   "name": "bs-flexboxgrid",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w -ws _ ",
@@ -38,9 +38,6 @@
     "flexboxgrid": "^6.3.1"
   },
   "devDependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "reason-react": ">=0.7.0",
     "bs-css": "^11.0.0",
     "bs-platform": "^5.2.1",
     "css-loader": "^3.2.0",
@@ -48,6 +45,9 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": ">=0.7.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
