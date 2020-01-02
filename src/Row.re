@@ -13,6 +13,7 @@ let make =
       ~around=`none,
       ~between=`none,
       ~reverse=false,
+      ~className="",
     ) => {
   let totalOptions =
     [|
@@ -26,6 +27,7 @@ let make =
       breakpointedProp("around", around),
       breakpointedProp("between", between),
       booleanProp("reverse", reverse),
+      className,
     |]
     |> Js.Array.joinWith("  ");
   <div className=totalOptions> children </div>;
