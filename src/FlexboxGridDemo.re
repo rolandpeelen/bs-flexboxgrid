@@ -18,6 +18,35 @@ module Box = {
     </div>;
   };
 };
+module BsCss = {
+  open Css;
+  let rowStyle =
+    style([
+      backgroundColor(`rgba((0, 0, 0, 0.2))),
+      padding2(~v=0.5->rem, ~h=0.5->rem),
+    ]);
+  let colStyle =
+    style([
+      backgroundColor(`rgba((0, 0, 0, 0.2))),
+      borderColor(`rgba((0, 0, 0, 0.2))),
+      borderWidth(1->px),
+      borderStyle(`solid),
+      padding2(~v=0.5->rem, ~h=0.5->rem),
+    ]);
+  [@react.component]
+  let make = () => {
+    <>
+      <h1> "Bs-Css Compatibility"->React.string </h1>
+      <p> "Add extra styles with the className tag"->React.string </p>
+      <Row className=rowStyle>
+        <Col className=colStyle xs=3> "1"->React.string </Col>
+        <Col className=colStyle xs=3> "2"->React.string </Col>
+        <Col className=colStyle xs=3> "3"->React.string </Col>
+        <Col className=colStyle xs=3> "4"->React.string </Col>
+      </Row>
+    </>;
+  };
+};
 module Alignment = {
   [@react.component]
   let make = () => {

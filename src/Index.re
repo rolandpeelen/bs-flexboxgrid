@@ -2,6 +2,7 @@ open FlexboxGridDemo;
 
 ReactDOMRe.renderToElementWithId(
   <>
+    <BsCss />
     <Responsive />
     <Fluid />
     <Offsets />
