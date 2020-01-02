@@ -15,6 +15,7 @@ let make =
       ~smOffset=?,
       ~mdOffset=?,
       ~lgOffset=?,
+      ~className="",
     ) => {
   let totalOptions =
     [|
@@ -29,6 +30,7 @@ let make =
       breakpointedProp("col", fluid),
       breakpointedProp("first", first),
       breakpointedProp("last", last),
+      className,
     |]
     |> Js.Array.joinWith("  ");
 
