@@ -31,3 +31,6 @@ let breakpointedProp = (prop, breakpoint) => {
 let booleanProp = (prop, bool) => {
   bool ? prop : "";
 };
+
+let ignoreEmptyAndConcatenate = arr =>
+  arr |> Js.Array.filter(s => s !== "") |> Js.Array.joinWith(" ");

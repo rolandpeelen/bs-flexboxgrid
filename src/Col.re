@@ -32,7 +32,7 @@ let make =
       breakpointedProp("last", last),
       className,
     |]
-    |> Js.Array.joinWith("  ");
+    ->ignoreEmptyAndConcatenate;
 
   <div className=totalOptions> children </div>;
 };
