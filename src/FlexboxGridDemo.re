@@ -3,7 +3,7 @@ module Box = {
 
   let boxStyle =
     style([
-      backgroundColor(`rgba((0, 127, 255, 0.2))),
+      backgroundColor(`rgba((0, 127, 255, `num(0.2)))),
       padding(1.0->rem),
       marginBottom(1.0->rem),
       borderRadius(0.2->rem),
@@ -22,13 +22,13 @@ module BsCss = {
   open Css;
   let rowStyle =
     style([
-      backgroundColor(`rgba((0, 0, 0, 0.2))),
+      backgroundColor(`rgba((0, 0, 0, `num(0.2)))),
       padding2(~v=0.5->rem, ~h=0.5->rem),
     ]);
   let colStyle =
     style([
-      backgroundColor(`rgba((0, 0, 0, 0.2))),
-      borderColor(`rgba((0, 0, 0, 0.2))),
+      backgroundColor(`rgba((0, 0, 0, `num(0.2)))),
+      borderColor(`rgba((0, 0, 0, `num(0.2)))),
       borderWidth(1->px),
       borderStyle(`solid),
       padding2(~v=0.5->rem, ~h=0.5->rem),
