@@ -34,6 +34,12 @@
     "type": "git",
     "url": "git+https://github.com/rolandpeelen/bs-flexboxgrid"
   },
+  "resolutions": {
+    "node-forge": "^0.10.0",
+    "http-proxy": "^1.18.1",
+    "kind-of": "^6.0.3",
+    "lodash": ">4.17.19"
+  },
   "dependencies": {
     "bs-css": "^13.1.0",
     "bs-css-emotion": "^2.1.0",
