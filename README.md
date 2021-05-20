@@ -57,6 +57,3 @@ NOTE - To keep the interface as clean as possible, all values, while technically
  ...someStuff
 </Col>
 ```
-
-# Examples
-The full exampleset as found on the flexboxgrid website, can be found by cloning this repo / starting it. 
